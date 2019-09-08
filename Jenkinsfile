@@ -8,6 +8,7 @@ pipeline {
   }
   stages {
     stage('pre-build') {
+      agent any
       steps {
         echo 'First Step'
         git(url: 'https://github.com/shrajaee2/bestoon.git', branch: 'master')
